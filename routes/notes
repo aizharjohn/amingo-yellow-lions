@@ -1,0 +1,38 @@
+# GET
+Only receives data. You can filter what kind
+of data using queries. Queries go in the URL.
+
+# POST
+For storing data to the backend (e.g, string, numbers, BLOB). 
+All the data for POST goes in the BODY section.
+
+Body parser
+every piece of info that client and server exchange goes into packets (header, body)
+
+#PUT, DELETE, PATCH
+also use the body section
+only use when you want to be specific otherwise most things can be done with GET and POST 
+
+// NodeJS
+- Desktop application
+- Convert JS to Binary
+
+// Express
+- A bunch of files written JavaScript
+- For doing stuff like http requests
+
+// NPM
+- Desktop application
+- Installing JavaScript modules 
+
+// HTTP
+- Rules for communication on the WWW
+
+// API
+- Rules that an application wants others to follow
+
+// jQuery
+- One JavaScript file for animation & AJAX on the web
+
+// Ajax
+- For performing an HTTP request from the browser
