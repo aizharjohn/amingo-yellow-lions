@@ -5,9 +5,10 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 // 2. Import routes
-const UserRoutes = require("./routes/User.js");
-const FeedRoutes = require("./routes/Feed.js");
-// const UserRoutes = require("./models/User");
+const UserRoutes = require("./routes/ShareUser.js");
+const FeedRoutes = require("./routes/ShareFeed.js");
+const FeedTopic = require("./routes/ShareTopic.js");
+// const UserRoutes = require("./routes/User");
 
 // 3. Configure express to parse BODY
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -35,10 +36,20 @@ app.use(
   "/user", // http://www.myapp.com/user/
   UserRoutes // routes/User.js
 );
+app.use(
+  // this is where to access the routes
+  "/login", // http://www.myapp.com/user/
+  UserRoutes // routes/User.js
+);
+app.use(
+  // this is where to access the routes
+  "/register", // http://www.myapp.com/user/
+  UserRoutes // routes/User.js
+);
 
 app.use(
   // this is where to access the routes
-  "/feed", // http://www.myapp.com/feed/create
+  "/topics", // http://www.myapp.com/feed/create
   FeedRoutes // routes/User.js
 );
 

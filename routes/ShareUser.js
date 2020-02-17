@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 
-const UserModel = require("../models/User.js");
+const UserModel = require("../models/ShareUser.js");
 
 router.post(
   "/register", // http:/www.myapp.com/user/register
