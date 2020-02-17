@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // 4. Connect to our database
 const dbURL =
-  "mongodb+srv://admin:admin@cluster0-bibdm.mongodb.net/test?retryWrites=true&w=majority"; // your db url
+"mongodb+srv://admin:astro123@cluster0-zditd.mongodb.net/test?retryWrites=true&w=majority"; // your db url
 mongoose
   .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
